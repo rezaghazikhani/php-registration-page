@@ -1,0 +1,8 @@
+services:
+  php:
+# image: docker.io/library/php:8.2-apache
+   image: ghcr.io/cwm360/php:8.2-apache
+   ports:
+   - 8080:80
+   volumes:
+   - .:/var/www/html:Z
